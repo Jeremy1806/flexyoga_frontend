@@ -22,7 +22,7 @@ function FormSignup({ submitForm }) {
   function submit_enroll() {
     console.log(values);
     axios
-      .post("http://priyanshusingh1806.pythonanywhere.com/api/enroll", {
+      .post("https://priyanshusingh1806.pythonanywhere.com/api/enroll", {
         body: values,
       })
       .then((response) => {
@@ -38,7 +38,7 @@ function FormSignup({ submitForm }) {
   function submit_edit() {
     console.log(values);
     axios
-      .put("http://priyanshusingh1806.pythonanywhere.com/api/batch", {
+      .put("https://priyanshusingh1806.pythonanywhere.com/api/batch", {
         body: values,
       })
       .then((response) => {
@@ -52,7 +52,7 @@ function FormSignup({ submitForm }) {
   function submit_payment() {
     console.log(values);
     axios
-      .put("http://priyanshusingh1806.pythonanywhere.com/api/pay", {
+      .put("https://priyanshusingh1806.pythonanywhere.com/api/pay", {
         body: values,
       })
       .then((response) => {
