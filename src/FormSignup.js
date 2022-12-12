@@ -67,7 +67,7 @@ function FormSignup({ submitForm }) {
     <div className="form-content-right">
       <form className="form" onSubmit={handleSubmit}>
         <h1>Strengthen your Immune system with yoga</h1>
-        <h2>Join us Today</h2>
+        <h2>Join us Today To Rejuvenate your Body and Soul</h2>
         {/* user name */}
         <div className="form-inputs">
           <label htmlFor="name" className="form-label">
@@ -106,7 +106,7 @@ function FormSignup({ submitForm }) {
         {/* user age */}
 
         <div className="form-todo">
-          <label htmlFor="age" className="form-label1">
+          <label htmlFor="age" className="form-label">
             Age
           </label>
           <input
@@ -121,7 +121,9 @@ function FormSignup({ submitForm }) {
           {errors.age && <p>{errors.age}</p>}
         </div>
         <div className="form-inputs">
-          <label for="batch">Select Batch</label>
+          <label for="batch" className="form-label">
+            Select Batch
+          </label>
           <select
             id="batch"
             name="batch"
