@@ -22,7 +22,7 @@ function FormSignup({ submitForm }) {
   function submit_enroll() {
     console.log(values);
     axios
-      .post("http://127.0.0.1:8000/api/enroll", {
+      .post("http://priyanshusingh1806.pythonanywhere.com/api/enroll", {
         body: values,
       })
       .then((response) => {
@@ -38,7 +38,7 @@ function FormSignup({ submitForm }) {
   function submit_edit() {
     console.log(values);
     axios
-      .put("http://127.0.0.1:8000/api/batch", {
+      .put("http://priyanshusingh1806.pythonanywhere.com/api/batch", {
         body: values,
       })
       .then((response) => {
@@ -52,7 +52,7 @@ function FormSignup({ submitForm }) {
   function submit_payment() {
     console.log(values);
     axios
-      .put("http://127.0.0.1:8000/api/pay", {
+      .put("http://priyanshusingh1806.pythonanywhere.com/api/pay", {
         body: values,
       })
       .then((response) => {
